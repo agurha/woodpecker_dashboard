@@ -1,0 +1,39 @@
+//
+   Created with JetBrains WebStorm.
+   User: agurha
+   Date: 12/03/2013
+   Time: 13:07
+   To change this template use File | Settings | File Templates.
+
+extends layout
+
+block head
+  script(type='text/javascript', src='/public/js/angular.js')
+  script(type='text/javascript', src='/public/js/signinController.js')
+block content
+  div(class='row-fluid')
+    div(class='span12')
+      div(class='hero-unit')
+        div(class='row-fluid pagination-centered')
+          h2 Login
+        hr
+        div(class='row-fluid')
+          div(class='span4 well', style="text-align: center")
+            div(ng-controller='SignInCtrl')
+              form(name='formSignIn',action='login',method='post', novalidate)
+                input(id='fn', name='email',type='email', ng-model='credential.login', ng-required='true' , placeholder='Email Address')
+                input(id='ln',name='password',type='password', ng-model='credential.password', ng-required='true', placeholder='Password')
+                button(type='submit',ng-disabled='formSignIn.$invalid', class='btn btn-large') Log In
+              a(href="/password_reset/") Forgot password?
+
+
+          div(class='offset1 span6')
+            h4 Don't have an account yet?
+              a(class='btn btn-success btn-large pull-right') Sign Up
+
+            dl
+              dt Get going in minutes
+              dd Harness the power of our fexible and powerful api.
+            dl
+              dt Excellect customer service
+              dd We provide exceptional customer support and always there to help you out.
