@@ -1,0 +1,15 @@
+api:
+  url: 'http://localhost:2333/v1'
+  version: '0.0.1'
+
+node:
+ host: localhost
+ port: 8080
+
+
+redis:
+  host: pub-redis-13799.us-east-1-2.3.ec2.garantiadata.com
+  port: 13799
+
+session:
+  secret: mag1ck
