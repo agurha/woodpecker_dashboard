@@ -14,7 +14,6 @@ var express = require('express')
   , passport = require('passport')
   , util = require('util')
   , LocalStrategy = require('passport-local').Strategy
-  , api = require('./services/apiService').apiClient;
 
 
 // Passport session setup.
