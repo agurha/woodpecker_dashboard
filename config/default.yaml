@@ -8,9 +8,8 @@ node:
 
 
 redis:
-  host: localhost
-  port: 6379
-  secret: starbur5t
+  host: pub-redis-13799.us-east-1-2.3.ec2.garantiadata.com
+  port: 13799
 
 session:
   secret: mag1ck
