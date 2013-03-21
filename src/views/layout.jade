@@ -1,0 +1,39 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=LibreBaskerville")
+
+    link(rel='stylesheet', href='/vendor/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='vendor/bootstrap/css/bootstrap-responsive.css')
+
+  body(id='welcome_index', data-action='index')
+    div(class='navbar navbar-fixed-top')
+      div(class='navbar-inner clearfix')
+        div(class='container')
+          a(class='brand', href='/')
+            span(class='logo-text') Woodpecker
+
+          a(class='btn btn-navbar', data-toggle='collapse' , data-target='.nav-collapse')
+            span(class='icon-bar')
+            span(class='icon-bar')
+            span(class='icon-bar')
+
+          div(class='nav-collapse collapse')
+            ul(class='nav pull-right')
+              li
+                a(href='/docs')
+                  span Docs
+              li
+                a(href='/login')
+                  span Login
+
+              li
+                a(href='/signup')
+                  span Signup
+
+
+
+    block content
+
+

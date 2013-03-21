@@ -1,9 +1,9 @@
 {
+  "author": "Ankur Gurha",
   "name": "Woodpecker_Dashboard",
   "version": "0.0.1",
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": ">= 0.8.4"
   },
   "scripts": {
     "start": "forever -a app.js"
@@ -20,6 +20,22 @@
     "flashify":"latest",
     "restify": "latest",
     "yaml": "latest",
-    "connect-flash": "latest"
+    "connect-flash": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "nodemailer": "latest"
+
+},
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-recess": "~0.3",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-concat": "~0.1.3",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-testacular": "~0.3.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-less": "latest"
   }
 }
